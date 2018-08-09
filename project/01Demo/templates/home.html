@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--引入css文件-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/mycss.css')}}">
+</head>
+<body>
+    {% if myisoff == 1  %}
+        <div>{{myvalue1}}</div>
+        <div>{{myvalue2}}</div>
+    {% else %}
+        <div>空</div>
+        <div>空</div>
+    {% endif %}
+
+     <!--跳转到指定页面，longPage为py文件中定义的函数-->
+    <a href="{{url_for('longPage')}}">跳转</a>
+</body>
+</html>
