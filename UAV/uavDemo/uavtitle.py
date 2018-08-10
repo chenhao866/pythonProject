@@ -64,7 +64,7 @@ def zhiXing():
     for i in range(0,257):
         strurl = 'https://www.skypixel.com/api/v2/works?lang=zh-CN&platform=web&sort=hot&filter=featured:true&limit=20&offset={0}'.format(sum)
         sum+=20
-        geturl(strurl,'sea-ghosts','2018-08-05') #参数1：所查询的URL，参数2：避免查询重复数据，参数3：指定查询的时间，用于标记查询记录
+        geturl(strurl,'vlog2-79f121df-82be-4931-9ba0-df811e6a05b7','2018-08-10') #参数1：所查询的URL，参数2：避免查询重复数据，参数3：指定查询的时间，用于标记查询记录
         print(i)
         print(sum)
        # time.sleep(5)
